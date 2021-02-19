@@ -5,7 +5,8 @@
 }
 
 .container{
-	width: 1110px;
+	width: 100%;
+	max-width: 1110px;
 	margin: 0 auto;
 }
 .titul{
@@ -15,9 +16,13 @@
 	padding: 80px 0 48px 0;
 }
 .block-shell-top{
-	width: 100%;
 	padding-bottom: 80px; 
+	vertical-align: top;
 }
+.block-shell-bot{
+	vertical-align: top;
+}
+
 .block{
 	display: inline-block;
 	width: 45.046%;  /*Знаю что нежелательно использовать тысячные и т.д., но так идеально получилось 500px, что не смог удержаться. В конце-концов тема адаптива*/
@@ -29,6 +34,7 @@
 	margin-right: 9.552%;
 }
 .block-text-regular{
+	width: 100%;
 	font-family: 'Manrope-Regular';
 	font-size: 28px;
 	line-height: 40px;
@@ -38,6 +44,7 @@
 	font-family: 'Manrope-Bold';
 }
 .block-basement{
+	width: 100%;
 	padding-top: 20px;
 	text-align-last: justify;
 }
@@ -58,3 +65,50 @@
 	outline: none;
 	cursor: pointer;
 }
+
+@media screen and (max-width: 1440px){
+	.block-left{
+		margin-right: 9.15%;
+	}
+}
+@media screen and (max-width: 1110px){
+	.block-left{
+		margin-right: 9.2%;
+	}
+}
+@media screen and (max-width: 654px){
+	.block-left{
+		margin-right: 9%;
+	}
+	.button{
+		display: block;
+	}
+	.block-basemen{
+		text-align-last: auto;
+	}
+	.block-shell-top{
+		padding-bottom: 40px;
+	}
+}
+@media screen and (max-width: 434px){
+	.block img{
+		width: 100%;
+	}
+	.block-left{
+		margin-right: 0;
+	}
+	.block{
+		width: 100%;
+		display: block;
+		margin-bottom: 25px;
+	}
+	.button{
+		margin: 15px 0;
+		padding: 15px 40px;
+	}
+	.block-shell-top{
+		padding-bottom: 0;
+	}
+}
+
+/*Прописать размеры текста для медиа*/

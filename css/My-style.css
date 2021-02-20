@@ -34,7 +34,6 @@
 	margin-right: 9.552%;
 }
 .block-text-regular{
-	width: 100%;
 	font-family: 'Manrope-Regular';
 	font-size: 28px;
 	line-height: 40px;
@@ -65,17 +64,31 @@
 	outline: none;
 	cursor: pointer;
 }
-
+.button:hover{
+	background-color: #7817E7;
+}
+.button:focus{
+	background-color: #591BA0;
+}
+.block img:hover{
+	box-shadow: 0px 4px 16px 0 rgba(0,0,0,0.2);
+}
 @media screen and (max-width: 1440px){
 	.block-left{
 		margin-right: 9.15%;
 	}
 }
-@media screen and (max-width: 1110px){
-	.block-left{
-		margin-right: 9.2%;
+@media screen and (max-width: 885px){
+	.block-text-regular{
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.titul{
+		font-size: 30px;
+		line-height: 40px;
 	}
 }
+
 @media screen and (max-width: 654px){
 	.block-left{
 		margin-right: 9%;
@@ -110,5 +123,3 @@
 		padding-bottom: 0;
 	}
 }
-
-/*Прописать размеры текста для медиа*/
